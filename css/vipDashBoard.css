@@ -1,0 +1,165 @@
+body {
+    font-size: 0.75rem;
+}
+
+.page-group.page-current,
+.page.page-current {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.row {
+    margin-left: 0px;
+}
+
+.page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+}
+
+.personal-detail {
+    margin: 1rem auto;
+    width: 90%;
+    padding: 0.4rem;
+    text-align: center;
+    border: 1px dashed #65b81b;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* 卡片样式 */
+
+.my-card {
+    color: white;
+    background-image: url("../image/ticket.png");
+    background-size: 100% 100%;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 5px 10px 6px #E9E9E9;
+    border-radius: 5px;
+    font-size: 0.65rem;
+}
+
+.my-card .text-firstrow {
+    margin-bottom: 0.4rem;
+    padding: 0.5rem;
+}
+
+.my-card .text-secondrow {
+    margin-bottom: 0.4rem;
+    padding: 0 0.5rem;
+}
+
+.my-card .lastrow {
+    margin-bottom: 0.4rem;
+    padding: 0 0.5rem;
+}
+
+.my-card .left-text {
+    text-align: left;
+}
+
+.my-card .right-text {
+    text-align: right;
+}
+
+.my-card .description-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.my-card .row .col-50 {
+    width: 46%;
+    margin-left: 3%;
+}
+
+.my-card .card-buttom {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    color: #919a88;
+    text-align: left;
+    font-size: 0.6rem;
+    padding: 1% 3%;
+}
+
+.my-card .card-buttom .right-text {
+    text-align: right;
+}
+
+/* 卡片样式 */
+
+.district-zone {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.district-zone .button.button-big {
+    font-size: .75rem;
+}
+
+.district-zone .button.button-fill {
+    color: #fff;
+    background: #65b81b;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border: none;
+}
+
+/* 表格 */
+
+.tab-wrapper table {
+    width: 90%;
+    color: #414c37;
+    text-align: center;
+    margin: 0.4rem auto;
+    table-layout: fixed;
+}
+
+.table-header-style tr th {
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #64b91c;
+}
+
+.table-style {
+    height: 245px;
+    overflow-y: scroll;
+}
+
+.table-style tr th {
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #64b91c;
+}
+
+.table-style tr td {
+    padding: 0.3rem 0;
+    border-bottom: 1px dashed #dde1da;
+}
+
+a {
+    color: #65b81b;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.consume-recorder {
+    color: #65b81b;
+    font-size: .85rem;
+    text-align: center;
+}
+
+/* 表格 */
+
+/* vip中心 */
+
+.vip-card .district-zone {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.icon {
+    transform: rotate(-90deg);
+    font-size: 10px;
+    color: #65b81b;
+}

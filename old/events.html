@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>近期活动</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="./dependency/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./css/events.css">
+</head>
+<body>
+
+
+<div class="page-group">
+    <div class="page page-current">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                    <img src="./image/1_03.png" alt=""></div>
+                <div class="swiper-slide "><img
+                        src="./image/2_03.png"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="./image/3_03.png"
+                        alt=""></div>
+            </div>
+        </div>
+
+        <div class="content native-scroll infinite-scroll infinite-scroll-bottom">
+            <div class="list">
+                <div data-bind="foreach:eventList">
+                    <div class="row"
+                         data-bind="css:{'no-border':$parent.finish && $index()==$parent.eventList().length-1}">
+                        <div class="col-33"><img class='card-cover' data-bind="attr:{src:img}" alt=""></div>
+                        <div class="col-66">
+                            <div class="event-title" >新鲜水果蔬菜免费配送到家</div>
+                            <div class="event-des">为回报广大顾客，近期举行免费配送新鲜水果</div>
+                            <!--<div class="event-des" data-bind="text:description">aaaaaa</div>-->
+                            <div class="event-date" data-bind="text:create_time"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infinite-scroll-preloader" data-bind="visible:!finish()">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='./dependency/swiper/swiper.min.js' charset='utf-8'></script>
+<script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script src="./dependency/knockout/knockout.mapping-latest.js"></script>
+<script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='./js/events.js' charset='utf-8' defer="defer"></script>
+</body>
+</html>

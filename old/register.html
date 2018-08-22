@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+
+<div class="page-group">
+    <div class="page page-current">
+        <div class="cover">
+            <div class="center-box">
+                <div class="box-title">欢迎注册果蔬精粹日志</div>
+                <div>
+                    <div class="box-label"><span class="required">*</span>手机号：</div>
+                    <div class="box-input"><input type="text" data-bind="value: phoneNumber"></div>
+                </div>
+                <div class="box-space">
+                    <div class="box-label">邮箱：</div>
+                    <div class="box-input"><input type="text" data-bind="value: email"></div>
+                </div>
+                <div><a data-bind="click:submit">注册</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script src="./dependency/knockout/knockout.validation.min.js"></script>
+<script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='./js/register.js' charset='utf-8'></script>
+</body>
+</html>

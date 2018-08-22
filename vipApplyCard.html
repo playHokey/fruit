@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>办理卡券</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="./css/vipApplyCard.css">
+</head>
+
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <!-- 你的html代码 -->
+            <div class="personal-detail">
+                <div class="row no-gutter">
+                    <div class="col-50">
+                        <span>
+                            <i class="icon icon-caret"></i> 姓名：</span>
+                        <span>许三观</span>
+                    </div>
+                    <div class="col-50">
+                        <span>
+                            <i class="icon icon-caret"></i> 年龄：</span>
+                        <span>33</span>
+                    </div>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-50">
+                        <span>
+                            <i class="icon icon-caret"></i> 性别：</span>
+                        <span>男</span>
+                    </div>
+                    <div class="col-50">
+                        <span>
+                            <i class="icon icon-caret"></i> 手机：</span>
+                        <span>121111111</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row consume-recorder">
+                <div class="col-100">
+                    <span>--办理新卡--</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <div class="row">
+                        <span class="">请选择卡券类型:</span>
+                    </div>
+                    <div class="row button-group">
+                        <div class="col-50">
+                            <p>
+                                <a href="#" class="button button-group-item">9.9元体验卡</a>
+                            </p>
+                        </div>
+                        <div class="col-50">
+                            <p>
+                                <a href="#" class="button ">188元三天辟谷卡</a>
+                            </p>
+                        </div>
+                        <div class="col-50">
+                            <p>
+                                <a href="#" class="button ">400元实惠卡</a>
+                            </p>
+                        </div>
+                        <div class="col-50">
+                            <p>
+                                <a href="#" class="button ">500元小资卡</a>
+                            </p>
+                        </div>
+                        <div class="col-50">
+                            <p>
+                                <a href="#" class="button ">900元至尊卡</a>
+                            </p>
+                        </div>
+                        <div class="col-50">
+                            <p>
+                                <a href="#" class="button ">1250土豪卡</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="row district-zone">
+                        <div class="col-100 text-cut">
+                            <a href="#" class="button button-big button-fill button-round ">确认办卡</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script>
+    $(document).ready(function () {
+        var time = null;
+        $('.button').click(function () {
+            var flag = $(this);
+            if (flag.hasClass('button-angle')) {
+                flag.removeClass('button-angle')
+            } else {
+                flag.addClass('button-angle');
+            }
+        });
+    });
+</script>
+
+</html>

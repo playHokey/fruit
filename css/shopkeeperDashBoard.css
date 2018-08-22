@@ -1,0 +1,117 @@
+body {
+    font-size: 0.75rem;
+}
+
+.page-group.page-current,
+.page.page-current {
+    overflow: scroll;
+}
+
+a {
+    color: #65b81b;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+}
+
+.bar {
+    background: none;
+}
+
+.bar .searchbar {
+    background: none;
+}
+
+.bar .button {
+    top: 0;
+}
+
+.button {
+    padding: 0px;
+}
+
+.button.button-fill,
+.button.button-fill:active {
+    background: #65b81b;
+}
+
+.search-input {
+    width: 84%;
+    float: left;
+}
+
+.button-fill {
+    width: 14%;
+    float: right;
+}
+
+/* tab选项卡样式更新 */
+
+.buttons-tab .button.active {
+    font-weight: bold;
+    color: #64b91c;
+    border-color: #64b91c;
+    z-index: 100;
+}
+
+.buttons-tab .button {
+    color: #5f646e;
+    font-size: 0.75rem;
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+}
+
+/* center包裹 */
+
+.content-block {
+    margin: .75rem auto;
+    width: 90%;
+}
+
+.search-input input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.4rem;
+    display: block;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    font-family: inherit;
+    color: #3d4145;
+    font-size: .7rem;
+    font-weight: 400;
+    padding: 0 .5rem;
+    background-color: #fff;
+    border: 1px solid #64b91c;
+}
+
+.tab-wrapper table {
+    width: 90%;
+    color: #414c37;
+    text-align: center;
+    margin: 0.2rem auto;
+    table-layout: fixed;
+}
+
+.table-header-style tr th {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #64b91c
+}
+
+.table-style {
+    height: 65vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.table-style tr td {
+    padding: 0.4rem 0;
+    border-bottom: 1px dashed #dde1da
+}

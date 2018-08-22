@@ -1,0 +1,113 @@
+body {
+    font-size: 0.75rem;
+}
+
+.page-group.page-current,
+.page.page-current {
+    overflow: scroll;
+}
+
+.row {
+    overflow: hidden;
+    margin-left: 0;
+}
+
+.row .col-50 {
+    width: 46%;
+    margin-left: 2%;
+}
+
+.page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+}
+
+.personal-detail {
+    margin: 1rem auto;
+    width: 90%;
+    padding: 0.4rem;
+    text-align: center;
+    border: 1px dashed #65b81b;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.icon {
+    transform: rotate(-90deg);
+    font-size: 10px;
+    color: #65b81b;
+}
+
+.consume-recorder {
+    color: #65b81b;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.button-group .button {
+    color: #414c37;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border: 1px solid #414c37;
+}
+
+.button-group .buttonChecked {
+    color: #414c37;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border: 1px solid #65b81b;
+}
+
+.district-zone {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button.button-fill.button-big {
+    line-height: 1.8rem;
+}
+
+.district-zone .button {
+    background-color: #65b81b;
+    height: 1.8rem;
+    line-height: 1.8rem;
+}
+
+/* 图标 */
+
+.button {
+    position: relative;
+}
+
+.button-angle {
+    border: 2px solid #65b81b !important;
+}
+
+.button-angle {
+    border: 2px solid #65b81b;
+}
+
+.button-angle::before {
+    font-style: normal;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    content: "\2713";
+    position: absolute;
+    top: -12px;
+    right: 2px;
+    color: #ffffff;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.button-angle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #65b81b;
+    border-left: 24px solid transparent;
+}

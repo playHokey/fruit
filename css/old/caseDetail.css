@@ -1,0 +1,154 @@
+.page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+}
+
+.article-block {
+    width: 95%;
+    margin: .5rem auto;
+    clear: both;
+    text-align: center;
+    box-shadow: 0px 5px 20px 5px #E9E9E9;
+    background: white;
+    padding: 1rem;
+}
+
+.article-title {
+    font-size: 20px;
+}
+
+.article-date {
+    color: #8e9f8a;
+    text-align: right;
+    margin: .3rem;
+    font-size: 14px;
+}
+
+.article-header {
+    color: #65b81b;
+    text-align: left;
+    font-size: 18px;
+    height: 2rem;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.article-header .point {
+    background: #65b81b;
+    border-radius: 10rem;
+    width: .6rem;
+    height: .6rem;
+    display: inline-block;
+    margin: .7rem .3rem .7rem 0;
+}
+
+.article-header .text {
+    margin: .4rem 0;
+    display: inline-block;
+    height: 1.2rem;
+    position: absolute;
+    text-align: justify;
+}
+
+.article-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.article-img img {
+    width: 100%;
+}
+
+.article-data {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin-top: 2rem;
+    color: #8E9F8A;
+    font-size: 14px;
+}
+
+.article-data .data {
+    margin-left: .1rem;
+    margin-right: .7rem;
+}
+
+.article-data img {
+    width: .8rem;
+    height: .6rem;
+}
+
+.comment-block {
+    width: 100%;
+    background: white;
+}
+
+.comment-block .comment-list {
+    width: 95%;
+    border: 1px solid #dddddd;
+    min-height: 10rem;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: .4rem;
+}
+
+.comment-block .comment-title {
+    padding: .5rem 0;
+}
+
+.comment-block .comment-title .line{
+    border-bottom: 1px solid black;
+}
+
+.comment-block .comment-subtitle {
+    text-align: right;
+    color: #65B81B;
+    position: relative;
+    height: 1.2rem;
+    width: 100%;
+}
+
+.comment-block .comment-subtitle img {
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    top: .2rem;
+    left: -1rem;
+}
+
+.comment-block .comment-subtitle span {
+    position: absolute;
+    left: 80%;
+}
+
+.comment-block .comment-item {
+    margin: .5rem;
+    border-bottom: 1px solid #dddddd;
+    display:  inline-block;
+    width: 95%;
+    padding-bottom:.5rem;
+}
+
+.comment-block .comment-item img {
+    width: 20%;
+    float: left;
+    display: block;
+}
+
+.comment-block .comment-item .comment-detail {
+    width: 80%;
+    float: left;
+    text-align: left;
+    padding-left: .6rem;
+    display:  block;
+}
+
+.comment-block .comment-item .comment-detail-title {
+    padding-bottom: .5rem;
+    color: #999999;
+}
+
+
+

@@ -1,0 +1,318 @@
+body {
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.self-page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+    text-align: center;
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.required {
+    color: red !important;
+}
+
+.fixed-height {
+    height: 2.2rem;
+}
+
+/*验证*/
+.validationMessage {
+    color: red !important;
+    font-size: 12px !important;
+    text-align: left;
+    display: inline-block;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.cancel-default {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.register-form {
+    width: 70%;
+    display: inline-block;
+    position: relative;
+}
+
+/*标签*/
+.register-form .form-label {
+    color: #000000;
+    font-size: 18px;
+    margin: auto;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+    display: block;
+    clear: both;
+    line-height: 1rem;
+    position: relative;
+}
+
+.left-form-label {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute !important;
+    left: 0;
+}
+
+.right-form-label {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute !important;
+    left: 58%;
+}
+
+.left-form-btn {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute;
+    left: 0;
+    height: 1.8rem;
+}
+
+.right-form-btn {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute;
+    left: 58%;
+    height: 1.8rem;
+}
+
+.row1 {
+    top: 2.4rem;
+}
+
+.label-row1 {
+    top: 4.2rem;
+}
+
+.row2 {
+    top: 6.6rem;
+}
+
+.label-row2 {
+    top: 8.4rem;
+}
+
+.row3 {
+    top: 10.8rem;
+}
+
+.label-row3 {
+    top: 12.6rem;
+}
+
+.row4 {
+    top: 15rem;
+}
+
+/*每个input元素*/
+.register-form .form-item {
+    width: 100%;
+    color: #3b6812;
+    height: 2.2rem;
+    padding: .3rem;
+    border: 1px solid #CCCCCC;
+    border-radius: .3rem;
+    line-height: 1.6rem;
+    background: #ffffff;
+}
+
+/*textarea*/
+.register-form .form-area {
+    width: 100%;
+    color: #3b6812;
+    padding: .3rem;
+    border: 1px solid #CCCCCC;
+    border-radius: .3rem;
+    background: #ffffff;
+}
+
+/*时间*/
+input[type="date"]:before {
+    color: #8f9f8a;
+    content: attr(placeholder);
+}
+
+/*文字输入*/
+.register-form .text-input {
+    width: 100%;
+    padding: .3rem;
+    border-radius: .3rem;
+    border: 1px solid #CCCCCC;
+}
+
+/*左右按钮*/
+.register-form .btn-input {
+    color: #000000;
+    width: 50%;
+    padding: .3rem;
+    border: 1px solid #CCCCCC;
+    float: left;
+    background: #ffffff;
+    height: 100%;
+}
+
+.left-btn {
+    border-radius: .3rem 0 0 .3rem;
+    border-right: none !important;
+}
+
+.right-btn {
+    border-radius: 0 .3rem .3rem 0;
+}
+
+.selected-btn {
+    background: #65B81B !important;
+    color: #ffffff !important;
+}
+
+/*下拉框*/
+.register-form .select {
+
+    text-align: left;
+}
+
+.register-form .select-name {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.register-form .icon-down {
+    float: right;
+}
+
+.register-form .select-show {
+    height: auto !important;
+    z-index: 1;
+    position: absolute;
+    margin-bottom: 1rem;
+}
+
+.register-form .select-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 11rem;
+}
+
+.register-form .list-item {
+    width: 100%;
+    color: #3b6812;
+    height: 2.2rem;
+    line-height: 1.6rem;
+    padding: .3rem;
+    display: none;
+    margin-left: -0.3rem;
+}
+
+.register-form .select-show .list-item {
+    display: inline-block !important;
+}
+
+.register-form .select-show .list-item:active {
+    background: #65B81B !important;
+    color: #ffffff !important;
+}
+
+.register-form .placeholder {
+    width: 100%;
+    display: inline-block;
+    line-height: 1.6rem;
+}
+
+.register-form .select-show .placeholder {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/*富文本编辑*/
+
+.register-form .form-rich-text {
+    width: 100%;
+    color: #3b6812;
+    padding: .3rem;
+    min-height: 5rem;
+    max-height: 10rem;
+    border: 1px solid #CCCCCC;
+    border-radius: .3rem;
+    background: #ffffff;
+    text-align: justify;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+.register-form .footer-btn {
+    text-align: center;
+    padding-top: 10px;
+    color: #65B81B;
+}
+
+.grey {
+    color: #8f9f8a;
+}
+
+/*一行三个的下拉框*/
+.small {
+    font-size: 12px;
+}
+
+.col-30 {
+    width: 32% !important;
+    position: absolute;
+}
+
+.left-select {
+    left: 0;
+}
+
+.middle-select {
+    left: 34%;
+}
+
+.right-select {
+    left: 68%;
+}
+
+/*最下面的按钮*/
+
+.col-50 {
+    width: 48% !important;
+    position: absolute;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    left: 52%;
+}
+
+.fixed-btn {
+    height: 2.2rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.register-form a {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    background: #65B81B;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 1rem;
+    display: inline-block;
+    box-shadow: 0px 1px 11px #888888;
+}
+

@@ -1,0 +1,124 @@
+.page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.card {
+    box-shadow: 0px 0px 20px 5px #E9E9E9;
+    border-radius: .4rem;
+}
+
+.row {
+    margin: auto;
+    padding: .5rem;
+
+}
+
+.line {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+}
+
+.two-line {
+    max-height: 3rem;
+    line-height: 1.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.case-user img {
+    height: 80%;
+    float: left;
+    margin-right: .2rem;
+}
+
+.case-title {
+    color: #65b81b;
+    font-size: 0.8rem;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.case-data {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    color: #8E9F8A;
+    font-size: 14px;
+}
+
+.case-data img {
+    width: .8rem;
+    height: .6rem;
+}
+
+.case-data img {
+    width: .8rem;
+    height: .6rem;
+    margin-right: .1rem;
+}
+
+.case-data-date {
+    width: 40%;
+    float: left;
+}
+
+.case-data-logo {
+    text-align: right;
+}
+
+.case-data-logo .data {
+    margin-right: .3rem;
+}
+
+.card-cover {
+    width: 100%;
+    box-shadow: 0px 0px 20px 5px #E9E9E9;
+    border-radius: .4rem;
+}
+
+.add {
+    position: absolute;
+    background: #65b81b;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+    border-radius: 50%;
+    bottom: .8rem;
+    left: 50%;
+    margin-left: -2rem;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px 5px #E9E9E9;
+}
+
+.add .icon1, .add .icon2 {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    border-bottom: 5px solid white;
+    left: 50%;
+    top: 50%;
+    border-radius: 20rem;
+    margin-top: -5%;
+    margin-left: -20%;
+}
+
+.add .icon2 {
+    transform: rotate(90deg);
+}
+
+.add .text {
+    font-size: 10px;
+    width: 100%;
+    top: 70%;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+}
+
+

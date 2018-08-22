@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>饮食习惯</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="./css/registerMore.css">
+</head>
+<body>
+
+<div class="self-page">
+    <div class="register-form ">
+        <label class="form-label left-form-label ">饮酒</label>
+        <div class="left-form-btn row1">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'drink',true) },css:{'selected-btn':isDrink()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'drink',false) },css:{'selected-btn':!isDrink()}"/>
+        </div>
+        <label class="form-label right-form-label ">吸烟</label>
+        <div class="right-form-btn row1">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'smoke',true) },css:{'selected-btn':isSmoke()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'smoke',false) },css:{'selected-btn':!isSmoke()}"/>
+        </div>
+        <label class="form-label left-form-label label-row1">糖或其他糖果</label>
+        <div class="left-form-btn row2">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'sugar',true) },css:{'selected-btn':isSugar()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'sugar',false) },css:{'selected-btn':!isSugar()}"/>
+        </div>
+        <label class="form-label right-form-label label-row1">快餐食品</label>
+        <div class="right-form-btn row2">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'fastFood',true) },css:{'selected-btn':isFastFood()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'fastFood',false) },css:{'selected-btn':!isFastFood()}"/>
+        </div>
+        <label class="form-label left-form-label label-row2">油炸食品</label>
+        <div class="left-form-btn row3">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'firedFood',true) },css:{'selected-btn':isFiredFood()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'firedFood',false) },css:{'selected-btn':!isFiredFood()}"/>
+        </div>
+        <label class="form-label right-form-label label-row2">奶制品</label>
+        <div class="right-form-btn row3">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'milk',true) },css:{'selected-btn':isMilk()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'milk',false) },css:{'selected-btn':!isMilk()}"/>
+        </div>
+        <label class="form-label left-form-label label-row3">嗜盐</label>
+        <div class="left-form-btn row4">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'salt',true) },css:{'selected-btn':isSalt()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'salt',false) },css:{'selected-btn':!isSalt()}"/>
+        </div>
+        <label class="form-label right-form-label label-row3">嗜油</label>
+        <div class="right-form-btn row4">
+            <input type="button" name="drink" value="是" class="btn-input left-btn "
+                   data-bind="event:{ click: setItem.bind($data,'oil',true) },css:{'selected-btn':isOil()}"/>
+            <input type="button" name="drink" value="否" class="btn-input right-btn"
+                   data-bind="event:{ click: setItem.bind($data,'oil',false) },css:{'selected-btn':!isOil()}"/>
+        </div>
+        <div style="margin-top: 16.8rem">
+            <label class="form-label" for="eatingOut">在外就餐(次/周)</label>
+            <div class="fixed-height">
+                <div class="form-item select"
+                     data-bind="event:{ click: setShow.bind($data, 'eatingOut') }, css:{'select-show':selectedShow()=='eatingOut'}">
+                  <span id="eatingOut" class="placeholder">
+                      <span data-bind="visible:!selectedEatingOut()" class="grey">请选择</span>
+                      <span data-bind="text:selectedEatingOut()"></span>
+                      <span class="icon icon-down" data-bind=" css:{'grey':!selectedEatingOut()}"></span>
+                  </span>
+                    <div data-bind="foreach: eatingOutList" class="select-list">
+                    <span class="list-item"
+                          data-bind="text:$data,click:$parent.setItem.bind($data,'eatingOut',$data)"> </span>
+                    </div>
+                </div>
+            </div>
+            <label class="form-label" for="illness">疾病说明</label>
+            <div>
+                <textarea rows="3" data-bind="value: illness" id="illness" class="form-area"></textarea>
+            </div>
+            <label class="form-label" for="improve">希望改善的地方</label>
+            <div>
+                <textarea rows="3" data-bind="value: illness" id="improve" class="form-area"></textarea>
+            </div>
+            <div class="fixed-btn">
+                <a href="#">提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='./js/foodHabits.js' charset='utf-8'></script>
+</body>
+</html>

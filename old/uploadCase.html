@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>上传案例</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="./css/registerMore.css">
+</head>
+<body>
+
+
+<div class="self-page">
+    <div class="register-form">
+        <label class="form-label" for="title">标题</label>
+        <div>
+            <input type="text" id="title" class="form-item text-input" >
+        </div>
+        <label class="form-label">病症描述</label>
+        <div>
+            <input type="hidden" id="target">
+            <div class="article-content form-rich-text" id="content">
+            </div>
+            <div class="footer-btn g-image-upload-box">
+                <div class="upload-button">
+                    <span class="upload"><i class="icon icon-picture"></i>&nbsp;&nbsp;点击上传图片</span>
+                    <input class="input-file" id="imageUpload" type="file" name="fileInput" accept="image/*" style="position:absolute;left:0;opacity:0;width:100%;">
+                </div>
+            </div>
+        </div>
+        <label class="form-label" for="formulation">使用配方</label>
+        <div>
+            <textarea rows="3"  id="formulation" class="form-area"></textarea>
+        </div>
+        <label class="form-label" for="time">服用时长</label>
+        <div>
+            <input type="text" id="time" class="form-item text-input" >
+        </div>
+        <label class="form-label" for="time">成效展示</label>
+        <div>
+            <input type="hidden" id="target1">
+            <div class="article-content form-rich-text" id="content1">
+            </div>
+            <div class="footer-btn g-image-upload-box">
+                <div class="upload-button">
+                    <span class="upload"><i class="icon icon-picture"></i>&nbsp;&nbsp;点击上传图片</span>
+                    <input class="input-file" id="imageUpload1" type="file" name="fileInput" accept="image/*" style="position:absolute;left:0;opacity:0;width:100%;">
+                </div>
+            </div>
+        </div>
+        <div class="fixed-btn">
+            <a data-bind="click:submit"  >提交</a>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='./dependency/jquery/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src="./dependency/arteditor/index.js"></script>
+<script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='./js/uploadCase.js' charset='utf-8'></script>
+</body>
+</html>

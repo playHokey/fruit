@@ -1,0 +1,208 @@
+.page {
+    background: url(../image/register_bg.png);
+    background-size: 100% 100%;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #65B81B;
+}
+
+.cover .box-title {
+    margin-top: 1.2rem;
+    font-size: 20px;
+}
+
+.cover .row {
+    margin: 1rem 0;
+    position: relative;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    overflow: visible;
+}
+
+
+.cover .row span {
+    position: absolute;
+}
+
+/*字体大小*/
+.cover .row .fs-30 {
+    font-size: 30px;
+}
+
+.cover .row .fs-22 {
+    font-size: 22px;
+}
+
+.cover .row .fs-20 {
+    font-size: 20px;
+}
+
+.cover .row .fs-19 {
+    font-size: 19px;
+}
+
+.cover .row .fs-18 {
+    font-size: 18px;
+}
+
+.cover .row .fs-17 {
+    font-size: 17px;
+}
+
+.cover .row .fs-16 {
+    font-size: 16px;
+}
+
+/*每行文字位置*/
+.cover .row1 .col1 {
+    left: 20%;
+}
+
+.cover .row1 .col2 {
+    left: 70%;
+}
+
+.cover .row2 .col1 {
+    left: 20%;
+}
+
+.cover .row2 .col2 {
+    left: 40%;
+}
+
+.cover .row2 .col3 {
+    left: 80%;
+    top: -.2rem;
+}
+
+.cover .row3 .col1 {
+    left: 15%;
+    top: -.5rem;
+}
+
+.cover .row3 .col2 {
+    left: 65%;
+}
+
+.cover .row4 .col1 {
+    left: 18%;
+    top:  .5rem;
+}
+
+.cover .row4 .col2 {
+    left: 45%;
+}
+
+.cover .row4 .col3 {
+    left: 75%;
+}
+
+.cover .row5 .col1 {
+    left: 15%;
+    top: .4rem;
+}
+
+.cover .row5 .col2 {
+    left: 42%;
+}
+
+.cover .row5 .col3 {
+    left: 80%;
+    top: .2rem;
+}
+
+.cover .row6 .col1 {
+    left: 22%;
+}
+
+.cover .row6 .col2 {
+    left: 50%;
+    top: .8rem;
+}
+
+.cover .row6 .col3 {
+    left: 80%;
+}
+
+.cover .row7 .col1 {
+    left: 10%;
+    top: -.2rem;
+}
+
+.cover .row7 .col2 {
+    left: 30%;
+    top: .8rem;
+}
+
+.cover .row7 .col3 {
+    left: 50%;
+    top: 2.5rem;
+}
+
+.cover .row7 .col4 {
+    left: 75%;
+    top: .8rem;
+}
+
+.cover .btn {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    padding: 0.5rem 0;
+    text-align: center;
+    background: #65B81B;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 1rem;
+    display: inline-block;
+    box-shadow: 0px 1px 11px #888888;
+}
+
+@media only screen and (max-width: 360px) {
+    .cover .row {
+        height: 1rem;
+        line-height: 1rem;
+    }
+
+    .cover .row .fs-30 {
+        font-size: 24px;
+        margin-top:.3rem;
+        font-weight: bold;
+    }
+
+    .cover .row .fs-22 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .cover .row .fs-20 {
+        font-size: 18px;
+    }
+
+    .cover .row .fs-19 {
+        font-size: 17px;
+    }
+
+    .cover .row .fs-18 {
+        font-size: 16px;
+    }
+
+    .cover .row .fs-17 {
+        font-size: 15px;
+    }
+
+    .cover .row .fs-16 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    .cover .row {
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
