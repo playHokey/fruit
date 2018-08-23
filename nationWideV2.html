@@ -482,37 +482,37 @@
                         <div class="row button-group" id="proButtons">
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button">总门店数</a>
+                                    <a href="#" class="button" id="one">总门店数</a>
                                 </p>
                             </div>
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button ">总会员数</a>
+                                    <a href="#" class="button " id="two">总会员数</a>
                                 </p>
                             </div>
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button ">调理中</a>
+                                    <a href="#" class="button "id="three">调理中</a>
                                 </p>
                             </div>
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button ">体验中</a>
+                                    <a href="#" class="button "id="four">体验中</a>
                                 </p>
                             </div>
                             <div class="col-33">
                                 <p>
-                                    <a href="#" class="button ">会员转化率</a>
+                                    <a href="#" class="button "id="five">会员转化率</a>
                                 </p>
                             </div>
                             <div class="col-33">
                                 <p>
-                                    <a href="#" class="button ">办卡会员</a>
+                                    <a href="#" class="button "id="six">办卡会员</a>
                                 </p>
                             </div>
                             <div class="col-33">
                                 <p>
-                                    <a href="#" class="button ">会员办卡率</a>
+                                    <a href="#" class="button "id="seven">会员办卡率</a>
                                 </p>
                             </div>
                         </div>
@@ -572,37 +572,37 @@
                         <div class="row button-group" id="shopButtons">
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button">总门店数</a>
+                                    <a class="button"id="tdZero">总门店数</a>
                                 </p>
                             </div>
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button ">总会员数</a>
+                                    <a href="#" class="button " id="tdOne" >总会员数</a>
                                 </p>
                             </div>
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button ">调理中</a>
+                                    <a href="#" class="button " id="tdTwo">调理中</a>
                                 </p>
                             </div>
                             <div class="col-25">
                                 <p>
-                                    <a href="#" class="button ">体验中</a>
+                                    <a href="#" class="button " id="tdThree">体验中</a>
                                 </p>
                             </div>
                             <div class="col-33">
                                 <p>
-                                    <a href="#" class="button ">会员转化率</a>
+                                    <a href="#" class="button " id="tdFour">会员转化率</a>
                                 </p>
                             </div>
                             <div class="col-33">
                                 <p>
-                                    <a href="#" class="button ">办卡会员</a>
+                                    <a href="#" class="button " id="tdFive">办卡会员</a>
                                 </p>
                             </div>
                             <div class="col-33">
                                 <p>
-                                    <a href="#" class="button ">会员办卡率</a>
+                                    <a href="#" class="button "id="tdSix">会员办卡率</a>
                                 </p>
                             </div>
                             <div class="col-100">
@@ -679,36 +679,64 @@
             // 省级别事件
                     $('#proButtons .button').click(function () {
                             var flag = $(this);
+                            var itemId= this.id
                             if (flag.hasClass('button-angle')) {
                                 flag.removeClass('button-angle')
+                                if($('#tableContent tr').children().hasClass(itemId)){   
+                                   var parentHeader=document.getElementById("rowHeader")
+                                    var headerLoop= parentHeader.getElementsByClassName(itemId)
+                                    for(var i=0;i<headerLoop.length;i++){
+                                       parentHeader.getElementsByClassName(itemId)[i].remove()
+                                    }
+                                    var parent=document.getElementById("tableContent")
+                                    var bodyloop= parent.getElementsByClassName(itemId)
+                                   for(var i=0;i<bodyloop.length;i++){
+                                       parent.getElementsByClassName(itemId)[i].remove()
+                                    }
+                               
+                                   
+                                }
                             } else {
                                 var temp = "需要写"
                                 flag.addClass('button-angle');
-                                $('#rowHeader').append(' <th >'+flag.text()+'<span class ="icon icon-down"></span> </th>');
-                                    $('#tableContent tr').append(" <td> " + temp + "</td>");
+                                $('#rowHeader').append("<th class="+itemId+ ">"+flag.text()+'<span class ="icon icon-down"></span>'+ '</th>');
+                                    $('#tableContent tr').append(" <td class="+itemId+"> " + temp + "</td>");
                                 }
                             });
-                            $('#rowHeader')
-                            .on("click","#rowHeader th", function(){
+                            $('#rowHeader').on("click","#rowHeader th", function(){
                                 var root=$(this).children();
                                 if(root.hasClass('icon-down')){
                                     root.removeClass('icon-down').addClass('icon-up')
                                 }else{
                                     root.removeClass('icon-up').addClass('icon-down')  
                                 }
-                            })
-                             // 门店点击事件
-                     $('#shopButtons .button').click(function () {
+                            });
+                
+                            // 门店点击事件
+                             $('#shopButtons .button').click(function () {
                             var flag = $(this);
+                            var itemId= this.id;
                             if (flag.hasClass('button-angle')) {
                                 flag.removeClass('button-angle')
+                                var parentHeader=document.getElementById("shopHeader")
+                                    var headerLoop= parentHeader.getElementsByClassName(itemId)
+                                    for(var i=0;i<headerLoop.length;i++){
+                                       parentHeader.getElementsByClassName(itemId)[i].remove()
+                                    }
+                                    var parent=document.getElementById("shopContent")
+                                    var bodyloop= parent.getElementsByClassName(itemId)
+                                    console.log(bodyloop)
+                                   for(var i=0;i<bodyloop.length;i++){
+                                       parent.getElementsByClassName(itemId)[i].remove()
+                                    }                               
                             } else {
                                 var temp = "需要写"
                                 flag.addClass('button-angle');
-                                $('#shopHeader').append(' <th >'+flag.text()+'<span class ="icon icon-down"></span> </th>');
-                                    $('#shopContent tr').append(" <td> " + temp + "</td>");
+                                $('#shopHeader').append("<th class="+itemId+ ">"+flag.text()+'<span class ="icon icon-down"></span>'+ '</th>');
+                                    $('#shopContent tr').append(" <td class="+itemId+"> " + temp + "</td>");
                                 }
                             });
+                            
                             $('#shopHeader')
                             .on("click","#shopHeader th", function(){
                                 var root=$(this).children();
@@ -718,16 +746,16 @@
                                     root.removeClass('icon-up').addClass('icon-down')  
                                 }
                             })
-                            // 省市区联动
+
+                            // 城市选择器
                             $("#city-picker").cityPicker({
-                                toolbarTemplate: '<header class="bar bar-nav">\
-                                <button class="button button-link pull-right close-picker">确定</button>\
-                                <h1 class="title">选择区域</h1>\
-                                </header>'
-                                
-                            });
-                    });
-                    
+                                    toolbarTemplate: '<header class="bar bar-nav">\
+                                    <button class="button button-link pull-right close-picker">确定</button>\
+                                    <h1 class="title">选择收货地址</h1>\
+                                    </header>'
+                                });
+                     
+                        });
                             
 
 
