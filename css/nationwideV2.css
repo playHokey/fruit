@@ -2,7 +2,9 @@
     background: url(../image/register_bg.png);
     background-size: 100% 100%;
 }
-
+.tabs{
+    margin-top: 8vh;
+}
 .card-wrapper {
     border-right: 1px solid #CCC
 }
@@ -263,13 +265,14 @@
 
 .button-wrapper {
     width: 100%;
-    background: #414c3705;
+    background:#ffffff;
     border-bottom: 1px solid #d0d0d0;
     display: block;
     z-index: 15;
     padding-bottom: 1px;
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
+    position: fixed;
 }
 
 .buttons-tab {
