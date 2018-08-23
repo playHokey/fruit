@@ -358,7 +358,7 @@
 }
 
 .button-group p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 /* 表格样式 */
@@ -379,15 +379,33 @@
 .table-style tr th {
     padding: 0.2rem 0;
     border-bottom: 1px solid #64b91c;
-    width: 27vw;
+    width: 32vw;
 }
 
 .table-style tr td {
     padding: 0.3rem 0;
-    width: 27vw;
+    width: 32vw;
     border-bottom: 1px dashed #dde1da;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.table-wrapper .icon {
+    font-size: 10px;
+    float: right;
+}
+
+.dispicker-wrapper{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.dispicker-wrapper input{
+    float: right;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #65b81b;
 }
